@@ -50,8 +50,15 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RomanNumeralConverterUpperAndLowerBoundsUnitTests.cs" />
+    <Compile Include="RomanNumeralConverterExpectedValuesUnitTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NumberSystemConverter\NumberSystemConverter.csproj">
+      <Project>{8bf7475b-ab5a-4297-bffd-e151a54686c6}</Project>
+      <Name>NumberSystemConverter</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
