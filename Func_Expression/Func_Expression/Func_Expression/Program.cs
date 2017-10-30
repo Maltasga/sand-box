@@ -9,7 +9,7 @@ namespace Func_Expression
         {
             IEnumerable<Produto> produtos = ProdutoContext.GetProdutos();
 
-            IEnumerable<Produto> produtosResult = produtos.Where(ProdutosQuery.FiltroValorMaiorIgual(50));
+            IEnumerable<Produto> produtosResult = produtos.Where(ProdutosQuery.FiltroContainsNome("tec"));
 
             foreach (Produto p in produtosResult)
             {
